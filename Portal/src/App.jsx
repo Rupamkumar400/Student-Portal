@@ -4,7 +4,8 @@ const App = () => {
   return (<>
     <login/>
     <div>Student Portal</div>
-    
+    <h1>H</h1>
+    <h1>EE</h1>
   </>
   )
 }
