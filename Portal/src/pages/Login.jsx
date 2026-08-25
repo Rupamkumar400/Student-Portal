@@ -27,7 +27,7 @@ function Login() {
     <div className="login-page">
       <div className="login-card">
         <div className="login-header">
-          <h1>Welcome Back</h1>
+          <h1>Student Portal</h1>
           <p>Login to continue</p>
         </div>
 
