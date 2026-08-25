@@ -4,10 +4,7 @@ const App = () => {
   return (<>
     <login/>
     <div>Student Portal</div>
-    <h1>H</h1>
-    <h1>EE</h1>
-    <h1>EEFF</h1>
-    <h1>Rupam</h1>
+    <h1>uuuu</h1>
   </>
   )
 }
