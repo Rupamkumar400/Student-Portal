@@ -1,16 +1,31 @@
-import React from 'react'
-import login from './pages/Login.jsx'
-const App = () => {
-  return (<>
-    <login/>
-    <div>Student Portal</div>
-    <h1>uuuu</h1>
-    <h2>HHH</h2>
-    kuch bhai
-    kldhfjdahflkdshvkldsvnsklvnslkvnfslkvn
-    ihrntgehwasdfghjkl;wertyuio
-  </>
-  )
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Login from "./pages/Login";
+import Admin from "./pages/Admin";
+import Student from "./pages/Student"
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<Navigate to="/login" />}
+        />
+        <Route
+          path="/login"
+          element={<Login />}
+        />
+        <Route
+          path="/admin"
+          element={<Admin />}
+        />
+        <Route 
+        path="/student"
+        element={<Student />}
+        />
+        
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
