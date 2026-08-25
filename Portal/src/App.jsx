@@ -5,6 +5,7 @@ const App = () => {
     <login/>
     <div>Student Portal</div>
     <h1>uuuu</h1>
+    <h2>HHH</h2>
   </>
   )
 }
