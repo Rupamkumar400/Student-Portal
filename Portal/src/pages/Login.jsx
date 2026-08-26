@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 function Login() {
   const Navigate = useNavigate();
   
@@ -10,18 +11,31 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    if(email === "admin@sms.com" && uniqueId === "admin123"){
+    //Admin--
+    if(email === "ADM@xyz.com" && uniqueId === "ADM-404"){
       Navigate("/admin")
+      return;
+
+    //Hod--
+    } else if(email.startsWith("HOD") && uniqueId === "HOD-101"){
+      Navigate("/hod")
+      return;
+    
+    //Staff--
+    } else if(email.startsWith("STF") && uniqueId.startsWith("STF")){
+      Navigate("/staff")
       return;
     }
 
-    if(email.endsWith(".com")){
+    //Student--
+    if(email.endsWith(".com") && uniqueId.startsWith("STD")){
       Navigate("/Student")
-    } 
+      return;
+    }
+
+
+    
   };
-
-
-
   
   return (
     <div className="login-page">

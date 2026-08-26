@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hod = () => {
   return (
-    <div>Hod</div>
+    <div>Hod Page</div>
   )
 }
 

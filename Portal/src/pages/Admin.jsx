@@ -8,8 +8,7 @@ function Admin() {
   }
   return (
     <div>
-      <h1>Home Page</h1>
-      <p>Welcome Admin! page</p>
+      <h1>Admin Page</h1>
       <button onClick={hendleLogout}>LogOut</button>
     </div>
   );
