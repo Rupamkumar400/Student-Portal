@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Login from "./pages/Login";
+import Login from "./pages/Auth/Login";
 import Admin from "./pages/Admin";
 import Hod from './pages/Hod'
-import Staff from './pages/Staff'
-import Student from "./pages/Student"
+import Staff from './pages/Staff/Staff'
+import Student from "./pages/Student/Student"
 function App() {
   return (
     <BrowserRouter>
