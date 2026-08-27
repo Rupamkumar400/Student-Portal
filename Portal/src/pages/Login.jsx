@@ -17,7 +17,7 @@ function Login() {
       return;
 
     //Hod--
-    } else if(email.startsWith("HOD") && uniqueId === "HOD-101"){
+    } else if(email.startsWith("HOD") && uniqueId === "HOD"){
       Navigate("/hod")
       return;
     
@@ -64,6 +64,7 @@ function Login() {
               value={uniqueId}
               onChange={(e) => setUniqueId(e.target.value)}
             />
+            <p className="warn-STD">* Student ID Starts With 'STD-' </p>
           </div>
 
           <button type="submit">Login</button>
