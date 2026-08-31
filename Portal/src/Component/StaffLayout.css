@@ -1,0 +1,11 @@
+.staff-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f1eb;
+}
+
+.staff-main {
+  flex: 1;
+  padding: 30px;
+  margin-left: 250px;
+}
