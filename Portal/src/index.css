@@ -148,3 +148,100 @@ form button:hover {
     font-size: 26px;
   }
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f1eb;
+  color: #2d211b;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #3b2418;
+}
+
+.page-header p {
+  color: #777;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f0dfd0;
+  border-radius: 12px;
+
+  font-size: 25px;
+}
+
+.dashboard-card h3 {
+  margin: 0;
+  font-size: 25px;
+  color: #3b2418;
+}
+
+.dashboard-card p {
+  margin: 5px 0 0;
+  color: #777;
+}
+
+.dashboard-section {
+  background: white;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 12px;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-section h2 {
+  margin-top: 0;
+}
+
+.staff-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.staff-table th,
+.staff-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.staff-table th {
+  background: #f5eee8;
+  color: #3b2418;
+}
